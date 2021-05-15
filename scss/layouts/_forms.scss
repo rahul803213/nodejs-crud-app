@@ -1,0 +1,21 @@
+.input{
+  height: 3rem;
+  margin-right: .5rem;
+  width: 100%;
+  text-decoration: none;
+  &:focus{
+  //  background-color: $color-primary;
+//outline-color: $color-primary;
+
+  }
+
+@include respond(phone){
+  margin-bottom: .2rem;
+  width: 100%;
+
+  &:focus{
+    outline-color: none;
+  }
+}
+
+}

@@ -1,0 +1,41 @@
+body{
+  font-family: "Lato",sans-serif;
+}
+html{
+  font-size: 62.5%;
+}
+.heading-primary{
+  color:white;
+
+
+  &--main{
+    display: block;
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 1.3rem;
+text-transform: uppercase;
+margin-bottom: .75rem;
+
+@include respond(phone){
+  font-size: 2rem;
+  letter-spacing: 0px;
+
+}
+  }
+  &--sub{
+    letter-spacing: .2rem;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: right;
+    margin-right: 1.3rem;
+  }
+}
+
+.heading-secondary{
+  font-size: 4rem;
+  text-align: center;
+
+  color:white;
+  background-color: $color-primary;
+}

@@ -1,0 +1,92 @@
+<%- include("partials/header")-%>
+<%- include("partials/nav")-%>
+<%if(fieldName==="results"){%>
+<br>
+    <div class="data">
+      <div class="heading-secondary">
+         Results
+      </div>
+      <ul class="data__list">
+        <%results.forEach(function(result){%>
+        <li class="data__item"><a href="/result/<%=result.name%>" class="data__link"> <%=result.name%></a></li>
+
+        <%})%>
+      </ul>
+
+  </div>
+<%}%>
+<%if(fieldName==="jobs"){%>
+  <br>
+  <div class="data">
+    <div class="heading-secondary">
+      Latest Job
+    </div>
+    <ul class="data__list">
+      <%jobs.forEach(function(job){%>
+
+      <li class="data__item"><a href="/job/<%=job.job_name%>" class="data__link"> <%=job.job_name%></a></li>
+
+      <%})%>
+
+    </ul>
+  </div>
+<%}%>
+<%if(fieldName==="admissions"){%>
+  <br>
+  <div class="data">
+    <div class="heading-secondary">
+      Admissions
+    </div>
+    <ul class="data__list">
+      <%admissions.forEach(function(admission){%>
+      <li class="data__item"><a href="<%=admission.link%>" class="data__link"> <%=admission.name%></a></li>
+
+      <%})%>
+    </ul>
+  </div>
+<%}%>
+<%if(fieldName==="admitCards"){%>
+  <br>
+  <div class="data">
+    <div class="heading-secondary">
+      Admit Card
+    </div>
+    <ul class="data__list">
+      <%admit_cards.forEach(function(admit_card){%>
+      <li class="data__item"><a href="/admit-card/<%=admit_card.name%>" class="data__link"> <%=admit_card.name%></a></li>
+
+      <%})%>
+
+    </ul>
+  </div>
+<%}%>
+<%if(fieldName==="gov_schemes"){%>
+  <br>
+  <div class="data">
+    <div class="heading-secondary">
+      Govt. Schemes
+    </div>
+    <ul class="data__list">
+      <%gov_schemes.forEach(function(gov_scheme){%>
+      <li class="data__item"><a href="/blog/<%=gov_scheme.name%>" class="data__link"> <%=gov_scheme.name%></a></li>
+
+      <%})%>
+    </ul>
+  </div>
+<%}%>
+<%if(fieldName==="answerKeys"){%>
+  <br>
+  <div class="data">
+    <div class="heading-secondary">
+    Answer Key
+    </div>
+    <ul class="data__list">
+      <%keys.forEach(function(key){%>
+      <li class="data__item"><a href="<%=key.link%>" class="data__link"> <%=key.name%></a></li>
+
+      <%})%>
+    </ul>
+  </div>
+
+<%}%>
+<%- include("partials/footer")-%>

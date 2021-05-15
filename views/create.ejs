@@ -1,0 +1,147 @@
+<%- include("partials/header")-%>
+<%- include("partials/admin/nav")-%>
+
+
+
+
+<div class="lead text-center text-uppercase text-danger margin-top-lg"><%=fieldName%> Edit</div>
+<div class="row">
+  <div class="col-lg-8">
+    <%if(fieldName==="results"){%>
+    <form class="" action="/createpost/createresult" method="post">
+      <label for="Body"> Result name:</label>
+      <br>
+      <input class="form-control form-control-lg" name="resultName"></input> <br />
+      <br />
+      <label for="Body">Link:</label>
+      <br>
+      <input class="form-control form-control-lg" name="resultLink" ></input>  <br />
+        <br />
+
+      <button type="submit" class="btn btn-primary btn-lg btn-block">FINISH</button>
+      <br>
+    </form>
+  <%}%>
+  <%if(fieldName==="jobs"){%>
+
+  <form class="" action="/createpost/job" method="post">
+    <label for="Body">Post name:</label>
+    <br>
+  <input class="form-control form-control-lg" name="job_name"></input>  <br />
+    <br />
+    <label for="Body">Link:</label>
+    <br>
+  <input class="form-control form-control-lg" name="link" ></input>  <br />
+    <br />
+
+    <label for="Body">start date:</label>
+    <br>
+  <input class="form-control form-control-lg" name="init_date" type="date"></input>  <br />
+    <br />
+    <label for="Body">Last Date:</label>
+    <br>
+  <input class="form-control form-control-lg" name="last_date" type="date" ></input>  <br />
+    <br />
+    <label for="Body">Age:</label>
+    <br>
+  <input class="form-control form-control-lg" name="age" type="number"></input>  <br />
+    <br />
+    <label for="Body">Syllabus:</label>
+    <br>
+  <input class="form-control form-control-lg" name="syllabus" type="file" accept="image/*">  <br />
+    <br />
+    <label for="Body">fee:</label>
+    <br>
+  <input class="form-control form-control-lg" name="fee" type="number"></input>  <br />
+    <br />
+    <label for="Body">Previous Year Question:</label>
+    <br>
+  <input class="form-control form-control-lg" name="prev_y_q" type="file" ></input>  <br />
+    <br />
+    <label for="Body">Process:</label>
+    <br>
+  <input class="form-control form-control-lg" name="process" type="file"></input>  <br />
+    <br />
+    <label for="Body">Education Eligiblity:</label>
+    <br>
+  <input class="form-control form-control-lg" name="e_e" type="text"></input>  <br />
+    <br />
+
+    <button type="submit" class="btn btn-primary btn-lg btn-block">FINISH</button>
+<br>
+  </form>
+  <%}%>
+  <%if(fieldName==="admit_cards"){%>
+    <form class="" action="/createpost/admit_cards" method="post">
+      <label for="Body">Admit card name:</label>
+      <br>
+      <input class="form-control form-control-lg" name="AdmitCardName"></input>  <br />
+      <br />
+      <label for="Body">Link:</label>
+      <br>
+      <input class="form-control form-control-lg" name="link" ></input>  <br />
+      <br />
+      <label for="Body">Syllabus:</label>
+      <br>
+    <input class="form-control form-control-lg" name="syllabus" type="text"></input>  <br />
+      <br />
+
+    <!-- <input class="form-control form-control-lg" name="fee" type="text"></input>  <br />
+      <br /> -->
+      <label for="Body">Previous Year Question:</label>
+      <br>
+    <input class="form-control form-control-lg" name="prev_y_q" type="file" ></input>  <br />
+      <br />
+      <button type="submit" class="btn btn-primary btn-lg btn-block">FINISH</button>
+  <br>
+    </form>
+<%}%>
+<%if(fieldName==="answerkey"){%>
+  <form class="" action="/createpost/answerKeyCreate" method="post">
+    <label for="Body"> Exam name:</label>
+    <br>
+    <input class="form-control form-control-lg" name="keyName"></input> <br />
+    <br />
+    <label for="Body">Link:</label>
+    <br>
+    <input class="form-control form-control-lg" name="keyLink" ></input>  <br />
+      <br />
+
+    <button type="submit" class="btn btn-primary btn-lg btn-block">FINISH</button>
+    <br>
+  </form>
+<%}%>
+<%if(fieldName==="gov_schemes"){%>
+  <form class="" action="/createpost/gov_schemes" method="post">
+    <label for="Body">name:</label>
+    <br>
+    <input class="form-control form-control-lg" name="name"></input>  <br />
+    <br />
+    <label for="Body">Link:</label>
+    <br>
+    <input class="form-control form-control-lg" name="link" ></input>  <br />
+    <br />
+
+    <button type="submit" class="btn btn-primary btn-lg btn-block">FINISH</button>
+<%}%>
+<%if(fieldName==="admission"){%>
+  <form class="" action="/createpost/admission" method="post">
+    <label for="Body">name:</label>
+    <br>
+    <input class="form-control form-control-lg" name="name"></input>  <br />
+    <br />
+    <label for="Body">Link:</label>
+    <br>
+    <input class="form-control form-control-lg" name="link" ></input>  <br />
+    <br />
+
+    <button type="submit" class="btn btn-primary btn-lg btn-block">FINISH</button>
+<br>
+  </form>
+<%}%>
+
+  </div>
+</div>
+
+
+<%- include("partials/footer")-%>

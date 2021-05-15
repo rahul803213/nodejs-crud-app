@@ -1,0 +1,35 @@
+.data{
+  height: auto;
+  border: .1rem solid black;
+  &__list{
+    list-style: none;
+margin-bottom: 0;
+    width: 100%;
+  }
+  &__item{
+    display:block;
+overflow: hidden;
+
+  }
+  &__link{
+    text-transform: uppercase;
+padding:1.2rem;
+    font-size: 2rem;
+    text-decoration: none;
+    display: block;
+    &:visited,
+    &:link{
+      color: $color-primary-dark;
+      border-bottom: .1rem solid $color-primary;
+
+    }
+    &:hover,
+    &:active{
+      border-radius: 1rem;
+      color:$color-white;
+      background-color: $color-primary;
+      text-decoration: none;
+ transition: all .4s;
+    }
+  }
+}

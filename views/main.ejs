@@ -1,0 +1,265 @@
+<%- include("partials/header")-%>
+<%- include("partials/nav")-%>
+<section class="section-main">
+  <%if(fieldName==="jobsView"){%>
+
+  <div class="Row">
+    <div class="col-1-of-3">
+      <div class="info">
+
+        <div style="overflow-x:auto;">
+          <table class="table">
+            <tr class="table__row">
+              <th colspan="2" class="table__title">Quick Links</th>
+
+
+            </tr>
+            <tr class="table__row">
+
+              <td class="table__data">Apply</td>
+              <td class="table__data"> <a href="<%=r.link%>">click here</a> </td>
+
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-1-of-3">
+      <div class="info">
+        <div style="overflow-x:auto;">
+          <table class="table">
+            <tr class="table__row">
+              <th colspan="2" class="table__title">Eligiblity,fee and Important dates</th>
+
+
+            </tr>
+            <tr class="table__row">
+              <td class="table__data">Age:</td>
+              <td class="table__data"><%=r.age%></td>
+
+            </tr>
+            <tr class="table__row">
+              <td class="table__data">Fee:</td>
+              <td class="table__data"><%=r.fee%></td>
+
+            </tr>
+            <tr class="table__row">
+              <td class="table__data">Vaccancy initial date</td>
+              <td class="table__data"><%=r.init_date%></td>
+
+            </tr>
+            <tr class="table__row">
+              <td class="table__data">Vaccancy last date</td>
+              <td class="table__data"><%=r.last_date%></td>
+
+            </tr>
+
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-1-of-3">
+      <div class="info">
+
+        <div style="overflow-x:auto;">
+          <table class="table">
+            <tr class="table__row">
+              <th colspan="2" class="table__title">Syllabus</th>
+
+
+            </tr>
+            <tr class="table__row">
+              <td class="table__data">view</td>
+              <td class="table__data"> <a href="table__link">click here</a> </td>
+
+            </tr>
+            <tr class="table__row">
+              <td class="table__data">Apply</td>
+              <td class="table__data"> <a href="table__link">click here</a> </td>
+
+            </tr>
+            <tr class="table__row">
+              <td class="table__data">Apply</td>
+              <td class="table__data"> <a href="table__link">click here</a> </td>
+
+            </tr>
+
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <%}%>
+  <% if(fieldName==="resultsView"){%>
+    <div class="Row">
+      <div class="col-1-of-3">
+        <div class="info">
+
+            <div style="overflow-x:auto;">
+      <table class="table">
+        <tr class="table__row">
+          <th colspan="2" class="table__title">Quick Links</th>
+
+
+        </tr>
+        <tr class="table__row">
+
+          <td class="table__data">See Results</td>
+          <td class="table__data"> <a href="<%=r.link%>">click here</a> </td>
+
+        </tr>
+  </table>
+    </div>
+  </div>
+      </div>
+      <div class="col-1-of-3"><div class="info">
+        <div style="overflow-x:auto;">
+  <table class="table">
+    <tr class="table__row">
+      <th colspan="2" class="table__title">Cutt-off</th>
+
+
+    </tr>
+    <tr class="table__row">
+      <td class="table__data">Age:</td>
+      <td class="table__data"><%=r.age%></td>
+
+    </tr>
+    <tr class="table__row">
+      <td class="table__data">Fee:</td>
+      <td class="table__data"><%=r.fee%></td>
+
+    </tr>
+    <tr class="table__row">
+      <td class="table__data">Vaccancy initial date</td>
+      <td class="table__data"><%=r.init_date%></td>
+
+    </tr>
+    <tr class="table__row">
+      <td class="table__data">Vaccancy last date</td>
+      <td class="table__data"><%=r.last_date%></td>
+
+    </tr>
+
+  </table>
+  </div>
+  </div></div>
+      <div class="col-1-of-3"><div class="info">
+
+          <div style="overflow-x:auto;">
+    <table class="table">
+      <tr class="table__row">
+        <th colspan="2" class="table__title">Next Process</th>
+
+
+      </tr>
+      <tr class="table__row">
+        <td class="table__data">Apply</td>
+        <td class="table__data"> <a href="table__link">click here</a> </td>
+
+      </tr>
+      <tr class="table__row">
+        <td class="table__data">Apply</td>
+        <td class="table__data"> <a href="table__link">click here</a> </td>
+
+      </tr>
+      <tr class="table__row">
+        <td class="table__data">Apply</td>
+        <td class="table__data"> <a href="table__link">click here</a> </td>
+
+      </tr>
+
+    </table>
+  </div>
+  </div></div>
+    </div>
+  <%}%>
+
+  <% if(fieldName==="admitCardsView"){%>
+
+
+    <div class="Row">
+      <div class="col-1-of-3">
+        <div class="info">
+
+            <div style="overflow-x:auto;">
+      <table class="table">
+        <tr class="table__row">
+          <th colspan="2" class="table__title"><%=r.name%></th>
+
+
+        </tr>
+        <tr class="table__row">
+
+          <td class="table__data">Download Admit Card</td>
+          <td class="table__data"> <a href="<%=r.link%>">click here</a> </td>
+
+        </tr>
+  </table>
+    </div>
+  </div>
+      </div>
+      <div class="col-1-of-3"><div class="info">
+        <div style="overflow-x:auto;">
+  <table class="table">
+    <tr class="table__row">
+      <th colspan="2" class="table__title">Question Bank</th>
+
+
+    </tr>
+    <tr class="table__row">
+      <td class="table__data">Question 2020</td>
+      <td class="table__data">click here</td>
+
+    </tr>
+    <tr class="table__row">
+      <td class="table__data">Question 2019</td>
+      <td class="table__data"></td>
+
+    </tr>
+  </table>
+  </div>
+  </div></div>
+      <div class="col-1-of-3"><div class="info">
+
+          <div style="overflow-x:auto;">
+    <table class="table">
+      <tr class="table__row">
+        <th colspan="2" class="table__title"> Syllabus</th>
+
+
+      </tr>
+      <tr class="table__row">
+        <td class="table__data">Download</td>
+        <td class="table__data"> <a href="table__link">click here</a> </td>
+
+      </tr>
+      <tr class="table__row">
+        <td class="table__data">Apply</td>
+        <td class="table__data"> <a href="table__link">click here</a> </td>
+
+      </tr>
+      <tr class="table__row">
+        <td class="table__data">Apply</td>
+        <td class="table__data"> <a href="table__link">click here</a> </td>
+
+      </tr>
+
+    </table>
+  </div>
+  </div></div>
+    </div>
+
+
+  <%}%>
+
+
+  <% if(fieldName==="syllabusView"){%>
+  <%}%>
+  <% if(fieldName==="otherFormView"){%>
+  <%}%>
+  <% if(fieldName==="previousYearQuestionsView"){%>
+  <%}%>
+
+</section>
+<%- include("partials/footer")-%>

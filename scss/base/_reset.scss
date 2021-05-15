@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  padding: 2rem;
+  margin: 0px;
+  background-color: #faf3f3;
+  //z-index: 5000;
+@include respond(phone){
+  padding:0px;
+
+}
+@include respond(tab-port){
+  padding: 0px;
+}
+}
