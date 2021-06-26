@@ -18,6 +18,24 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .margin-top-lg {
   margin-top: 6rem; }
 
+.bg-result {
+  background-color: #28b5b5 !important; }
+
+.bg-job {
+  background-color: #be0000 !important; }
+
+.bg-admission {
+  background-color: #16697a !important; }
+
+.bg-admit_card {
+  background-color: #ff79cd !important; }
+
+.bg-answer_key {
+  background-color: #ff577f !important; }
+
+.bg-govt_schemes {
+  background-color: #ff6701 !important; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -64,7 +82,7 @@ html {
   font-size: 4rem;
   text-align: center;
   color: white;
-  background-color: #3d84b8; }
+  background-color: #0066CC; }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -97,10 +115,10 @@ html {
     background-color: #fff; }
 
 .btn--green {
-  background-color: #3d84b8;
+  background-color: #0066CC;
   color: #fff; }
   .btn--green::after {
-    background-color: #3d84b8; }
+    background-color: #0066CC; }
 
 .btn::after {
   content: "";
@@ -120,15 +138,15 @@ html {
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
-  color: #3d84b8;
+  color: #0066CC;
   display: inline-block;
   text-decoration: none;
-  border-bottom: 1px solid #3d84b8;
+  border-bottom: 1px solid #0066CC;
   padding: 3px;
   transition: all .2s; }
 
 .btn-text:hover {
-  background-color: #3d84b8;
+  background-color: #0066CC;
   color: #fff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px); }
@@ -141,14 +159,15 @@ html {
   margin-top: 2rem;
   width: 100%;
   text-decoration: none;
-  padding: 0 1rem;
+  padding: 0.5rem 1rem;
   background-color: #ff5200;
   font-size: 2rem;
   color: white;
   border: 0;
-  height: 3rem;
-  border-radius: 1rem;
-  box-shadow: 1rem 2rem #777; }
+  height: 4rem;
+  border-radius: 1rem; }
+  .btn-subscribe:hover, .btn-subscribe:link:hover, .btn-subscribe:visited:hover {
+    box-shadow: 0 0.5rem 0.5rem rgba(119, 119, 119, 0.9); }
   @media only screen and (max-width: 37.5em) {
     .btn-subscribe, .btn-subscribe:link, .btn-subscribe:visited {
       width: 100%; } }
@@ -176,7 +195,7 @@ html {
 
 .header {
   height: 15vh;
-  background-color: #3d84b8;
+  background-color: #0066CC;
   position: relative;
   border-radius: 1rem; }
   @media only screen and (max-width: 37.5em) {
@@ -238,11 +257,11 @@ html {
     display: block; }
     .data__link:visited, .data__link:link {
       color: #344fa1;
-      border-bottom: 0.1rem solid #3d84b8; }
+      border-bottom: 0.1rem solid #0066CC; }
     .data__link:hover, .data__link:active {
-      border-radius: 1rem;
+      border-radius: 0rem;
       color: #fff;
-      background-color: #3d84b8;
+      background-color: #0066CC;
       text-decoration: none;
       transition: all .4s; }
 
@@ -298,7 +317,7 @@ html {
     margin-bottom: .5rem; }
   .table__title {
     text-align: center;
-    background-color: #3d84b8;
+    background-color: #0066CC;
     color: white;
     font-size: 3rem; }
   .table__link .table__data {
@@ -316,7 +335,7 @@ tr:nth-child(even) {
   .info__key {
     font-size: 2.5rem;
     padding: 1rem;
-    color: #3d84b8; }
+    color: #0066CC; }
     @media only screen and (max-width: 37.5em) {
       .info__key {
         font-size: 1.5rem;
@@ -369,7 +388,7 @@ tr:nth-child(even) {
   padding: .5rem .5rem; }
   .footer__link:hover {
     color: white;
-    background-color: #3d84b8;
+    background-color: #0066CC;
     transform: translate(1rem, -1rem);
     transition: .4s all;
     text-decoration: none; }
@@ -423,7 +442,7 @@ tr:nth-child(even) {
   .nav__link:link, .nav__link:visited {
     position: relative;
     text-decoration: none;
-    color: #3d84b8;
+    color: #0066CC;
     font-size: 2rem;
     padding: 1rem 2rem; }
     @media only screen and (max-width: 56.25em) {
@@ -436,7 +455,7 @@ tr:nth-child(even) {
     transform: translateX(1rem);
     text-decoration: none;
     background-position: 100%;
-    background-color: #3d84b8;
+    background-color: #0066CC;
     color: white;
     transition: all .5s; }
 
@@ -518,7 +537,7 @@ tr:nth-child(even) {
         display: inline-block; }
     .navigation__link:hover, .navigation__link:active {
       background-position: 100%;
-      color: #3d84b8;
+      color: #0066CC;
       transform: translateX(1rem); }
     .navigation__checkbox:checked ~ .navigation__background {
       transform: scale(60); }
@@ -580,7 +599,7 @@ tr:nth-child(even) {
   /* Dark grey background on mouse-over */ }
 
 .vertical-menu a.active {
-  background-color: #3d84b8;
+  background-color: #0066CC;
   /* Add a green color to the "active/current" link */
   color: white; }
 

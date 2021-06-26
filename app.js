@@ -9,10 +9,9 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.set('view engine','ejs');
 app.use(express.static('public'));
 var connection=mysql.createConnection({
-  port:"31232",
-  host:"204.2.195.78",
-  user:"admin",
-  password:"x1G9edlz",
+  host:"localhost",
+  user:"root",
+  password:"password",
   database:"realprojectpost"
 });
 connection.connect(function(err) {
@@ -268,10 +267,10 @@ if(editField==="job")
 })
 }
 
-if(editField==="result")
+if(editField==="createresult")
 {console.log("its working");
   var resultName=req.body.resultName;
-  var resultLink=req.body.link;
+  var resultLink=req.body.resultLink;
   let query="INSERT INTO result (name,link) SELECT * FROM (SELECT ?,?) AS tmp WHERE NOT EXISTS (SELECT name FROM result WHERE name = ?) LIMIT 1;"
   let data1=[resultName,resultLink,resultName];
   connection.query(query,
@@ -503,6 +502,6 @@ app.get("/createBlog",function(req,res){
   res.render("createBlog");
 })
 
-app.listen(process.env.PORT||3000,function(){
-  console.log("Server Started at 3000");
+app.listen(process.env.PORT||3001,function(){
+  console.log("Server Started at 3001");
 })
